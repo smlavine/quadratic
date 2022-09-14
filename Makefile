@@ -1,23 +1,22 @@
 .POSIX:
 
-PREFIX=/usr
+include config.mk
 
-HARE = hare
-
+NAME = quadratic
 SRC = main.ha
 
-all: quadratic
+all: $(NAME)
 
-quadratic: $(SRC)
-	$(HARE) build $(HAREFLAGS) -o $@
+$(NAME): $(SRC)
+	$(HARE) build $(HAREFLAGS) -o $(NAME)
 
-install: quadratic
-	cp ./quadratic $(DESTDIR)$(PREFIX)/bin
+install: $(NAME)
+	cp $(NAME) $(DESTDIR)$(PREFIX)/bin
 
 uninstall:
-	rm -f $(DESTDIR)$(PREFIX)/bin/quadratic
+	rm -f $(DESTDIR)$(PREFIX)/bin/$(NAME)
 
 clean:
-	rm -f ./quadratic
+	rm -f $(NAME)
 
 .PHONY: all clean install uninstall
