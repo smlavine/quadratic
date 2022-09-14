@@ -48,7 +48,7 @@ export fn main() void = {
 
 	const xs = quadratic_formula(abc[0], abc[1], abc[2]);
 	if (xs.0.1 == 0f64) {
-		fmt::printf("{}\n{}\n", xs.0.0, xs.1.1)!;
+		fmt::printf("{}\n{}\n", xs.0.0, xs.1.0)!;
 	} else {
 		fmt::printfln("{} + {}i", xs.0.0, xs.0.1)!;
 		fmt::printfln("{} + {}i", xs.1.0, xs.1.1)!;
