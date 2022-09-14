@@ -1,7 +1,5 @@
 .POSIX:
-.SUFFIXES:
 
-DESTDIR=
 PREFIX=/usr
 
 HARE = hare
