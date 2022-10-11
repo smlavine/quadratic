@@ -47,6 +47,10 @@ To uninstall, run
 make uninstall
 ```
 
+## Contributing
+
+Patches may be sent to [~smlavine/public-inbox@lists.sr.ht](https://lists.sr.ht/~smlavine/public-inbox).
+
 ## Copyright
 
 Copyright (C) 2022 Sebastian LaVine
