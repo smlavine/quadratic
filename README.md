@@ -1,4 +1,4 @@
-# quadratic
+# [quadratic](https://sr.ht/~smlavine/quadratic)
 
 A simple, command-line quadratic formula solver. Written in Hare.
 
