@@ -21,7 +21,7 @@ use os;
 use strconv;
 
 def FORMULA: str =
-`          ----------
+`          __________
    -b ± \/ b² - 4ac
 ------------------------
           2a
